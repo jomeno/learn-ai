@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression  # For Linear Regression model
 X = np.array([[1], [2], [3], [4], [5]])  # Input variable (also known as a feature or attribute)
 y = np.array([2, 4, 6, 8, 10])  # Output variable (target)
 
-# Split data into train and test sets (I explain in Learning Notes below)
+# Split data into train and test sets (I explain further in Learning Notes below)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Create a Linear Regression object
@@ -26,9 +26,9 @@ print("Predictions:", predictions)
 # Learning Notes
 
 # If you followed the linear regression blog post at https://verygenuine.com,
-# then you already know that data collection and preparation is required for machine learning solutions
-# the train_test_split function in this code sets a portion of your data aside for testing purpose
-# and using the remaining to do the model training.
-# To control what portion is used for testing, test_size is set to 0.2 which is 20 percent of the whole data.
+# you already know model training and testing is required for machine learning solutions.
+# The train_test_split function in this code sets a portion of your data aside for testing purpose
+# and uses the remaining to do the model training.
+# To control what portion of the data is used for testing, test_size is set to 0.2 (20 percent) of the whole data.
 # The random_state is used to ensure that the predicted result is consistent 
-# without which the results will vary uncontrollably. 
+# without which the results will vary uncontrollably during each run. 
