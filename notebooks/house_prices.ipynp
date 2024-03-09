@@ -31,4 +31,4 @@ print("Predictions:", predictions)
 # and uses the remaining to do the model training.
 # To control what portion of the data is used for testing, test_size is set to 0.2 (20 percent) of the whole data.
 # The random_state is used to ensure that the predicted result is consistent 
-# without which the results will vary uncontrollably during each run. 
+# without which the results will vary uncontrollably during each run.
